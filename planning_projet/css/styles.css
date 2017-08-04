@@ -1,0 +1,201 @@
+body, div, form, input, textarea, p, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+  color: #1b1c1c !important;
+}
+a:hover {
+  text-decoration: none !important;
+  color: #1b1c1c !important;
+}
+
+#dialog {
+  display: none;
+}
+
+.logo {
+  text-align: center;
+}
+
+label {
+  font-size: 13px;
+}
+#date {
+  margin: 0 auto;
+  text-align: center;
+}
+#date a {
+  text-decoration: none;
+  color: black;
+}
+
+.semaine {
+  color: #424545 !important;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 30px;
+  padding: 0 10px;
+}
+.semaine a {
+  color: #000000;
+  text-decoration: none;
+}
+.semaine a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+#calendrier {
+  border: 1px solid #FFF;
+  margin-top: 20px;
+}
+#calendrier table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+#calendrier th {
+  font-size: 15px;
+  font-family: Arial, "Arial Black", Times, "Times New Roman", serif;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+}
+#calendrier td {
+  border: 2px solid #000000;
+  font-family: "Trebuchet MS", "Times", serif;
+  font-size: 0.8em;
+  width: 11.11%;
+}
+
+.journee_cell_td .calendar_event {
+  width: 25%;
+}
+
+.noms_content {
+  font-family: "Helvetica Neue Bold Condensed", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #1b1c1c;
+}
+
+td.info_horaires {
+  background-color: #e8eef7;
+  width: 5% !important;
+  text-align: center;
+}
+
+.info_horaires_content {
+  height: 80px;
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+.calendar_event_date {
+  font-weight: bolder;
+  background-color: #a32929;
+}
+
+#create_event {
+  /*   display:none;*/
+}
+
+#gen_new_content {
+  display: none;
+  min-height: 45px !important;
+}
+
+#gen_new_calendar {
+  display: none;
+}
+
+#ajax_load {
+  margin-top: 3px;
+  height: 25px;
+}
+
+.cell_am, .cell_pm {
+  cursor: pointer;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 13px;
+  margin: 0 auto 8px auto;
+  text-align: center;
+  text-decoration: none;
+  width: 95%;
+}
+
+.cell_am {
+  background-color: #4CB052;
+}
+
+.cell_pm {
+  background-color: #8C66D9;
+}
+
+
+#errmsg {
+  color: red;
+}
+
+.to_do {
+  background-color: #8C66D9;
+}
+
+.in_progress {
+  background-color: #0099FF !important;
+}
+
+.pending_return_cl, .pending_return_cp {
+  background-color: #FFCC00 !important;
+}
+
+.finished {
+  background-color: #4CB052 !important;
+}
+
+.late {
+  background-color: #FF0000 !important;
+}
+
+
+.semaine_en_cours {
+  padding: 30px;
+  text-align: center;
+}
+
+.semaine_en_cours .btn {
+  border-radius: 10px;
+  background: #3b5998;
+  font-family: "FFDINWebProCondBold", helvetica, arial, sans-serif;
+  height: 43px;
+  width: 120px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.35s;
+}
+.semaine_en_cours .btn:after {
+  content: 'Semaine en cours';
+  color: #ffffff;
+  font-family: FFDINWebProCondBold, helvetica, arial, sans-serif;
+  font-size: 13px;
+  width: 120px;
+  height: 100%;
+  line-height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  transition: all 0.35s;
+}
+.semaine_en_cours .btn:hover:after {
+  /*text*/
+  content: 'Semaine en cours';
+  transform: scale(1.05);
+  transition-duration: 2s;
+  text-shadow: 0 0 7px #FF0000, 0 0 10px #0000FF;
+}
